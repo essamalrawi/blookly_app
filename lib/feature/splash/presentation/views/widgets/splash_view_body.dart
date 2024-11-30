@@ -1,9 +1,10 @@
 import 'package:blookly_app/constants.dart';
+import 'package:blookly_app/core/utils/app_router.dart';
 import 'package:blookly_app/core/utils/assets.dart';
 import 'package:blookly_app/feature/home/presentation/view/home_view.dart';
 import 'package:blookly_app/feature/splash/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -57,8 +58,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHomee() {
     Future.delayed(const Duration(seconds: 2), () {
-      Get.to(() => const HomeView(),
-          transition: Transition.fade, duration: kTranstionDuration);
+      // Get.to(
+      //   () => const HomeView(),
+      //   transition: Transition.fade,
+      //   duration: kTranstionDuration,
+      // );
+      GoRouter.of(context).push(AppRouter.kHomeView);
     });
   }
 }
