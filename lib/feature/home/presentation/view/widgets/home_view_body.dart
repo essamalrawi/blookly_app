@@ -3,6 +3,7 @@ import 'package:blookly_app/feature/home/presentation/view/widgets/best_seller_l
 import 'package:blookly_app/feature/home/presentation/view/widgets/custom_app_bar.dart';
 import 'package:blookly_app/feature/home/presentation/view/widgets/featured_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
