@@ -16,13 +16,15 @@ class SimillarBooksListView extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * .15,
             child: ListView.builder(
+                itemCount: state.book.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 5),
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 5),
                     child: CustomBookImage(
                       imageUrl:
-                          'https://i.pinimg.com/736x/ac/bc/76/acbc7691eb0423fbf222558e5d7b829a.jpg',
+                          state.book[index].volumeInfo.imageLinks?.thumbnail ??
+                              '',
                     ),
                   );
                 }),
@@ -30,7 +32,9 @@ class SimillarBooksListView extends StatelessWidget {
         } else if (state is SimilarBooksFaluire) {
           return CustomErrorWidget(error: state.errorMessage);
         } else {
-          return Image.asset(kLoadingImagePath);
+          return SizedBox(
+              height: MediaQuery.of(context).size.height * .15,
+              child: Image.asset(kLoadingImagePath));
         }
       },
     );

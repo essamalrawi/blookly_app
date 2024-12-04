@@ -1,6 +1,6 @@
 import 'package:blookly_app/constants.dart';
 import 'package:blookly_app/core/utils/app_router.dart';
-import 'package:blookly_app/core/utils/random_rating.dart';
+import 'package:blookly_app/core/functions/random_rating.dart';
 import 'package:blookly_app/core/utils/styles.dart';
 import 'package:blookly_app/feature/home/data/models/book_model/book_model.dart';
 import 'package:blookly_app/feature/home/presentation/view/widgets/book_rating.dart';

@@ -30,7 +30,8 @@ class BestSellerListView extends StatelessWidget {
         } else if (state is NewsetBooksFaluire) {
           return CustomErrorWidget(error: state.errMessage);
         } else {
-          return Center(child: Image.asset(kLoadingImagePath));
+          return SizedBox(
+              height: 50, child: Center(child: Image.asset(kLoadingImagePath)));
         }
       },
     );

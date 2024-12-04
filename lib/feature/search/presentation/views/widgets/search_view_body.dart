@@ -1,5 +1,4 @@
 import 'package:blookly_app/core/utils/styles.dart';
-import 'package:blookly_app/feature/home/presentation/view/widgets/best_seller_list_view_item.dart';
 import 'package:blookly_app/feature/search/presentation/views/widgets/custom_search_text_field.dart';
 import 'package:flutter/material.dart';
 

@@ -1,9 +1,11 @@
 import 'package:blookly_app/constants.dart';
+import 'package:blookly_app/core/utils/app_router.dart';
 import 'package:blookly_app/core/widgets/custom_error_widget.dart';
 import 'package:blookly_app/feature/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
 import 'package:blookly_app/feature/home/presentation/view/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class FeaturedListView extends StatelessWidget {
   const FeaturedListView({super.key});
@@ -21,10 +23,16 @@ class FeaturedListView extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: CustomBookImage(
-                      imageUrl:
-                          state.books[index].volumeInfo.imageLinks?.thumbnail ??
-                              "Error",
+                    child: GestureDetector(
+                      onTap: () {
+                        GoRouter.of(context).push(AppRouter.kBookDetailsView,
+                            extra: state.books[index]);
+                      },
+                      child: CustomBookImage(
+                        imageUrl: state.books[index].volumeInfo.imageLinks
+                                ?.thumbnail ??
+                            "Error",
+                      ),
                     ),
                   );
                 }),
