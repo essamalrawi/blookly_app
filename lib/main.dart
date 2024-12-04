@@ -11,6 +11,7 @@ import 'core/utils/app_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  setupServiceLocator();
   runApp(const Bookly());
 }
 
