@@ -1,0 +1,15 @@
+"filename", "language", "Dart", "comment", "blank", "total"
+"c:\dev\blookly_app\lib\core\functions\custom_snack_bar.dart", "Dart", 8, 0, 2, 10
+"c:\dev\blookly_app\lib\core\functions\launch_url.dart", "Dart", 12, 0, 2, 14
+"c:\dev\blookly_app\lib\core\functions\random_rating.dart", "Dart", 9, 0, 3, 12
+"c:\dev\blookly_app\lib\core\utils\random_rating.dart", "Dart", -9, 0, -3, -12
+"c:\dev\blookly_app\lib\core\widgets\custom_button.dart", "Dart", 2, 0, 0, 2
+"c:\dev\blookly_app\lib\feature\home\presentation\view\books_details_view.dart", "Dart", 3, 0, 0, 3
+"c:\dev\blookly_app\lib\feature\home\presentation\view\widgets\best_seller_list_view.dart", "Dart", 1, 0, 0, 1
+"c:\dev\blookly_app\lib\feature\home\presentation\view\widgets\book_details_view_body.dart", "Dart", 16, -3, -1, 12
+"c:\dev\blookly_app\lib\feature\home\presentation\view\widgets\books_action.dart", "Dart", 13, 0, 0, 13
+"c:\dev\blookly_app\lib\feature\home\presentation\view\widgets\custom_book_details_app_bar.dart", "Dart", 3, 0, 0, 3
+"c:\dev\blookly_app\lib\feature\home\presentation\view\widgets\featured_list_view.dart", "Dart", 8, 0, 0, 8
+"c:\dev\blookly_app\lib\feature\home\presentation\view\widgets\similar_books_list_view.dart", "Dart", 4, 0, 0, 4
+"c:\dev\blookly_app\lib\feature\search\presentation\views\widgets\search_view_body.dart", "Dart", -1, 0, 0, -1
+"Total", "-", 69, -3, 3, 69

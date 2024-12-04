@@ -1,6 +1,6 @@
 import 'package:blookly_app/core/functions/launch_url.dart';
+import 'package:blookly_app/core/models/book_model/book_model.dart';
 import 'package:blookly_app/core/widgets/custom_button.dart';
-import 'package:blookly_app/feature/home/data/models/book_model/book_model.dart';
 import 'package:flutter/material.dart';
 
 class BooksAction extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:blookly_app/feature/home/data/models/book_model/book_model.dart';
+import 'package:blookly_app/core/models/book_model/book_model.dart';
 import 'package:blookly_app/feature/home/presentation/manager/similar_books_cubit/similar_books_cubit.dart';
 import 'package:blookly_app/feature/home/presentation/view/widgets/book_details_view_body.dart';
 import 'package:flutter/material.dart';
