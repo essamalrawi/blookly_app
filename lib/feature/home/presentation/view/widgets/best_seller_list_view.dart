@@ -1,6 +1,5 @@
 import 'package:blookly_app/constants.dart';
 import 'package:blookly_app/core/widgets/custom_error_widget.dart';
-import 'package:blookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:blookly_app/feature/home/presentation/manager/newset_books/newset_books_cubit.dart';
 import 'package:blookly_app/feature/home/presentation/view/widgets/best_seller_list_view_item.dart';
 import 'package:flutter/material.dart';
