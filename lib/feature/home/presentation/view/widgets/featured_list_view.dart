@@ -1,5 +1,5 @@
+import 'package:blookly_app/constants.dart';
 import 'package:blookly_app/core/widgets/custom_error_widget.dart';
-import 'package:blookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:blookly_app/feature/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
 import 'package:blookly_app/feature/home/presentation/view/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +33,9 @@ class FeaturedListView extends StatelessWidget {
             error: state.errorMessage,
           );
         } else {
-          return const CustomLoadingIndicator();
+          return SizedBox(
+            child: Center(child: Image.asset(kLoadingImagePath)),
+          );
         }
       },
     );
