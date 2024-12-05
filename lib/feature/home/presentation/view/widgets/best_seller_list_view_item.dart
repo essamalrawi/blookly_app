@@ -46,6 +46,7 @@ class BookListViewItem extends StatelessWidget {
                   ),
                   Text(
                     "${book.volumeInfo.authors?[0] ?? 'John'} ",
+                    overflow: TextOverflow.ellipsis,
                     style: Styles.textStyle14,
                   ),
                   const SizedBox(
@@ -62,7 +63,7 @@ class BookListViewItem extends StatelessWidget {
                       const Spacer(),
                       BookRating(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        count: book.volumeInfo?.pageCount ?? 0,
+                        count: book.volumeInfo.pageCount ?? 0,
                         rating: RandomRating.randomRating(),
                       ),
                     ],
