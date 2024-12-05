@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:blookly_app/constants.dart';
 import 'package:blookly_app/core/models/book_model/book_model.dart';
 import 'package:blookly_app/core/utils/styles.dart';
