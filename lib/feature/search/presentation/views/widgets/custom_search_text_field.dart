@@ -1,4 +1,6 @@
+import 'package:blookly_app/feature/search/presentation/manager/search_books_cubit/search_books_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomSearchTextField extends StatelessWidget {
@@ -7,6 +9,11 @@ class CustomSearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+        onSubmitted: (value) async {
+          BlocProvider.of<SearchBooksCubit>(context)
+              .searchRepo
+              .fetchSearchBooks(category: value);
+        },
         decoration: InputDecoration(
             enabledBorder: buildOutlineInputBorder(),
             focusedBorder: buildOutlineInputBorder(),
