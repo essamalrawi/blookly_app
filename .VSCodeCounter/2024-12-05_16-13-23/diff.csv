@@ -1,0 +1,8 @@
+"filename", "language", "Dart", "comment", "blank", "total"
+"c:\dev\blookly_app\lib\core\utils\service_locator.dart", "Dart", 3, 0, 0, 3
+"c:\dev\blookly_app\lib\feature\search\data\repo\search_repo_impl.dart", "Dart", 2, 0, 1, 3
+"c:\dev\blookly_app\lib\feature\search\presentation\manager\search_books_cubit\search_books_cubit.dart", "Dart", 2, 0, 1, 3
+"c:\dev\blookly_app\lib\feature\search\presentation\views\search_view.dart", "Dart", -14, 0, -1, -15
+"c:\dev\blookly_app\lib\feature\search\presentation\views\widgets\custom_search_text_field.dart", "Dart", 5, 0, 0, 5
+"c:\dev\blookly_app\lib\feature\search\presentation\views\widgets\search_view_body.dart", "Dart", 33, -1, 1, 33
+"Total", "-", 31, -1, 2, 32

@@ -21,7 +21,6 @@ class _SearchViewBodyState extends State<SearchViewBody> {
     return BlocBuilder<SearchBooksCubit, SearchBooksState>(
       builder: (context, state) {
         if (state is SearchBooksInitial) {
-          log("Initial State");
           return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 30),
               child: CustomScrollView(slivers: [
@@ -52,6 +51,27 @@ class _SearchViewBodyState extends State<SearchViewBody> {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: CustomScrollView(slivers: [
+              const SliverToBoxAdapter(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: 16,
+                    ),
+                    CustomSearchTextField(),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    Text(
+                      'Search Result',
+                      style: Styles.textStyle18,
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                  ],
+                ),
+              ),
               SliverToBoxAdapter(
                 child: SearchResultListView(
                   book: state.book,
@@ -64,7 +84,7 @@ class _SearchViewBodyState extends State<SearchViewBody> {
 
           return const Text("OOPs");
         } else {
-          return Image.asset(kLoadingImagePath);
+          return Center(child: Image.asset(kLoadingImagePath));
         }
       },
     );

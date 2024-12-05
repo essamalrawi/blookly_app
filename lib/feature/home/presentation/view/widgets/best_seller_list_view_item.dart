@@ -45,7 +45,7 @@ class BookListViewItem extends StatelessWidget {
                     height: 3,
                   ),
                   Text(
-                    "${book.volumeInfo.authors![0]} ",
+                    "${book.volumeInfo.authors?[0] ?? 'John'} ",
                     style: Styles.textStyle14,
                   ),
                   const SizedBox(
@@ -62,7 +62,7 @@ class BookListViewItem extends StatelessWidget {
                       const Spacer(),
                       BookRating(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        count: book.volumeInfo.pageCount!,
+                        count: book.volumeInfo?.pageCount ?? 0,
                         rating: RandomRating.randomRating(),
                       ),
                     ],
